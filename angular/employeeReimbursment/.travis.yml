@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+    - "10.15"
+
+branches:
+    only:
+        - master
+
+before_script:
+    - npm install -g @angular/cli
+
+script:
+    - npm install
+    - ng build --prod
+    - npm install sonar-scanner
+    - sonar-scanner -Dsonar.projectKey=og88_PracticProject1 -Dsonar.organization=og88-github -Dsonar.sources=src -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN

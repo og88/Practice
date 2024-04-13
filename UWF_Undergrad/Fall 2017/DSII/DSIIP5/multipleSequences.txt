@@ -1,0 +1,9 @@
+8
+Kermit the frog here
+I can't stand the frog from the muppets
+stuff is not cool
+stuff is cool
+H = high similarity between the strings
+M = medium similarity between the strings
+xxxxxyyyyyxxx
+yxyxyxyxyxyxyx
